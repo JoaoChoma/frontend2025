@@ -1,0 +1,22 @@
+body{
+    background-color: #f8f8f8;
+    color: #212121;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    background-color: #212529;
+    padding: 15px;
+    margin: 5px;
+}
+/* comentario */
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul{
+    list-style: none;
+    padding: 0;
+}
