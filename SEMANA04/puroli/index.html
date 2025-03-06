@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página com CSS Puro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+
+        .navbar {
+            background-color: #212529;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 15px;
+        }
+
+        .menu ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .menu li {
+            display: inline;
+        }
+
+        .menu a {
+            display: block;
+            padding: 10px 15px;
+        }
+
+        .menu a:hover {
+            background-color: #343a40;
+            border-radius: 5px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #212529;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 600px) {
+            .menu ul {
+                flex-direction: column;
+                text-align: center;
+                padding: 0;
+            }
+
+            .menu li {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Menu de Navegação -->
+    <nav class="navbar">
+        <a href="#">Minha Página</a>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- Corpo da Página -->
+    <div class="container">
+        <section id="sobre" class="mb-4">
+            <h2>Sobre Nós</h2>
+            <p>Este é um exemplo de página utilizando apenas CSS puro para criar um layout responsivo e moderno.</p>
+        </section>
+        
+        <section id="servicos" class="mb-4">
+            <h2>Nossos Serviços</h2>
+            <p>Oferecemos uma ampla gama de serviços para atender às suas necessidades.</p>
+        </section>
+        
+        <section id="contato" class="mb-4">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações.</p>
+        </section>
+    </div>
+    
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Minha Página. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
