@@ -34,3 +34,11 @@ body {
     background-color: rgb(237, 159, 159);
     border-radius: 5px;
 }
+
+.conteudo-black{
+    background-color: #3c3c3c;
+}
+
+.conteudo-blue{
+    background-color: blue;
+}
