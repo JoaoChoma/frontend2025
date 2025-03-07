@@ -1,0 +1,36 @@
+body {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* se class */
+.topo {
+    background-color: rgb(32, 32, 32);
+    color: white;
+}
+
+/* se id */
+#topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar a {
+    padding: 10px;
+}
+
+.navbar a:hover {
+    background-color: rgb(237, 159, 159);
+    border-radius: 5px;
+}
