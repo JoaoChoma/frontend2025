@@ -1,0 +1,32 @@
+body{
+    background-color: blanchedalmond;
+}
+
+/*se for id*/
+#topo{
+    background-color: #565656;
+}
+
+/*se for class*/
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topo a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.topo a:hover{
+    background-color: #de6565;
+    border-radius: 5px;
+}
+
+.topo ul{
+    display: flex;
+    list-style: none;
+}
+
