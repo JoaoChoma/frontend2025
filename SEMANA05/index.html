@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de HTML - Tabelas e Formulários</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #0073e6;
+            color: white;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: auto;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #0073e6;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Explorando HTML: Tabelas e Formulários</h1>
+    
+    <h2>Exemplo de Tabela</h2>
+    <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>João Silva</td>
+            <td>28</td>
+            <td>joao@email.com</td>
+        </tr>
+        <tr>
+            <td>Maria Souza</td>
+            <td>32</td>
+            <td>maria@email.com</td>
+        </tr>
+    </table>
+    
+    <h2>Formulário de Cadastro</h2>
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade">
+
+        <label for="data">Data de Nascimento:</label>
+        <input type="date" id="data" name="data">
+        
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+        </select>
+        
+        <label for="cidade">Cidade:</label>
+        <input list="cidades" id="cidade" name="cidade">
+        <datalist id="cidades">
+            <option value="São Paulo">
+            <option value="Rio de Janeiro">
+            <option value="Belo Horizonte">
+            <option value="Curitiba">
+        </datalist>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+        
+        <label>
+            <input type="checkbox" name="termos"> Aceito os termos e condições
+        </label>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
