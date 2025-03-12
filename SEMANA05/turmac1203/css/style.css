@@ -1,0 +1,22 @@
+.tabela{
+    /*border-collapse: collapse;*/
+    width: 100%;
+}
+
+th, td{
+    border: 1px solid #000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+tr:hover{
+    background-color: #aeaeae;
+}
+th{
+    background-color: black;
+    color: white;
+}
+
+.topo{
+    text-align: center;
+}
