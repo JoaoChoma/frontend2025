@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="topo">
+        <h1>Cadastro de usuário</h1>
+    </div>
+    <div class="formulario">
+        <form>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" required>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" id="idade" required>
+
+            <label for="">Email</label>
+            <input type="email" id="email" required>
+
+            <label for="">Estado</label>
+            <select name="estado" id="estado">
+                <option value="PR">Parana</option>
+                <option value="SC">Santa Catarina</option>
+            </select>
+
+            <label for="">Cidade</label>
+            <input list="cidades">
+            <datalist id="cidades">
+                <option value="Maringa">Maringa</option>
+                <option value="Sarandi">Sarandi</option>
+                <option value="Marialva">Marialva</option>
+            </datalist>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+
+</html>
