@@ -1,0 +1,28 @@
+td, th{
+    border: 1px solid #000;
+    background-color: #7a7a7a;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabela{
+    /*border-collapse: collapse;*/
+    width: 100%;
+}
+
+th{
+    background-color: #000;
+    color: white;
+}
+
+.relatorio{
+    padding: 10px;
+}
+
+tr:hover {
+    td{
+        background-color: #bbbbbb;
+    }
+        
+}
