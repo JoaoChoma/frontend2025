@@ -1,0 +1,29 @@
+form{
+    background-color: rgb(99, 99, 99);
+    border-radius: 5px;
+    width: 600px;
+    padding: 20px;
+}
+
+label{
+    display: block;
+}
+
+input{
+    width: 100%;
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"]{
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    width: 100%;
+}
+
+input[type="submit"]:hover{
+    background-color: blue;
+}
