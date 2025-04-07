@@ -8,6 +8,16 @@ Turmas ADSIS 3S A, B, C
 
 ----
 
+# DIAS DE LUTA DIAS DE PROVAS
+
+TURMA A DE AMOR	-> 15/04/2025	17/04/2025
+TURMA B DE BOLA -> 14/04/2025	17/04/2025
+TURMA C DE CASA	-> 14/04/2025	15/04/2025
+
+lista de escalação está no diretório AVALIACAO 01 - ESCALACAO
+
+---
+
 
 # Link para submissão das entregas das atividades práticas
 
@@ -23,3 +33,7 @@ Este formulário será utilizado para a submissão de atividades práticas que i
     - __Envio de Arquivos:__ Envie o link de acesso ao repositório do projeto (GitHub ou plataformas semelhantes), contendo o diretório com os artefatos gerados durante a execução da atividade.
 
     - __Informações Necessárias:__ Preencha os campos com seu nome, RA e a turma na qual está matriculado.
+
+    ## LISTA DE ENTREGAS IDENTIFICADAS
+
+    As listas estão no diretório ATIVIDADES
