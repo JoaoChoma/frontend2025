@@ -10,11 +10,11 @@ Turmas ADSIS 3S A, B, C
 
 # DIAS DE LUTA DIAS DE PROVAS
 
-TURMA A DE AMOR	-> 15/04/2025	17/04/2025
-TURMA B DE BOLA -> 14/04/2025	17/04/2025
-TURMA C DE CASA	-> 14/04/2025	15/04/2025
+- TURMA A DE AMOR	-> 15/04/2025	17/04/2025
+- TURMA B DE BOLA -> 14/04/2025	17/04/2025
+- TURMA C DE CASA	-> 14/04/2025	15/04/2025
 
-lista de escalação está no diretório AVALIACAO 01 - ESCALACAO
+lista de escalação está no diretório AVALIACAO 01 - ESCALACAO -> https://github.com/JoaoChoma/frontend2025/tree/main/AVALIACAO%2001%20-%20ESCALACAO
 
 ---
 
@@ -36,4 +36,6 @@ Este formulário será utilizado para a submissão de atividades práticas que i
 
     ## LISTA DE ENTREGAS IDENTIFICADAS
 
-    As listas estão no diretório ATIVIDADES
+    - As listas estão no diretório ATIVIDADES
+
+    https://github.com/JoaoChoma/frontend2025/tree/main/ATIVIDADES
