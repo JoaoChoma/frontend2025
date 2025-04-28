@@ -39,3 +39,6 @@ Este formulário será utilizado para a submissão de atividades práticas que i
     - As listas estão no diretório ATIVIDADES
 
     https://github.com/JoaoChoma/frontend2025/tree/main/ATIVIDADES
+
+
+    https://github.com/braziljs/eloquente-javascript
