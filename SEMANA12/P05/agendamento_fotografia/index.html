@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendamento Sessão Fotográfica</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Simulação de Sessão Fotográfica</h1>
+    <form id="formFoto">
+      <label for="nome">Nome do cliente:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="sessao">Tipo de sessão:</label>
+      <select id="sessao" name="sessao">
+        <option value="individual">Ensaio individual</option>
+        <option value="casal">Ensaio de casal</option>
+        <option value="familia">Ensaio em família</option>
+      </select>
+
+      <label for="participantes">Quantidade de participantes:</label>
+      <input type="number" id="participantes" name="participantes" min="1" required />
+
+      <fieldset>
+        <legend>Deseja incluir maquiagem profissional?</legend>
+        <label><input type="radio" name="maquiagem" value="sim" required /> Sim</label>
+        <label><input type="radio" name="maquiagem" value="nao" required /> Não</label>
+      </fieldset>
+
+      <button type="submit">Simular Orçamento</button>
+    </form>
+
+    <div id="resumo"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

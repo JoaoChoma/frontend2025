@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reserva de Aula de Idiomas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Reserva de Aula Experimental</h1>
+    <form id="formReserva">
+      <label for="nome">Nome completo do aluno:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="idioma">Idioma desejado:</label>
+      <select id="idioma" name="idioma">
+        <option value="ingles">Inglês</option>
+        <option value="espanhol">Espanhol</option>
+        <option value="frances">Francês</option>
+      </select>
+
+      <label for="duracao">Duração da aula (minutos):</label>
+      <input type="number" id="duracao" name="duracao" min="30" required />
+
+      <fieldset>
+        <legend>Frequência:</legend>
+        <label><input type="radio" name="frequencia" value="unica" required /> Aula única</label>
+        <label><input type="radio" name="frequencia" value="semanal" required /> Aula semanal</label>
+      </fieldset>
+
+      <button type="submit">Reservar Aula</button>
+    </form>
+
+    <div id="resumo"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

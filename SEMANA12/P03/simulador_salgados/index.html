@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulador de Salgados</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Simulador de Venda de Salgados</h1>
+    <form id="formSalgados">
+      <label for="cliente">Nome do cliente:</label>
+      <input type="text" id="cliente" name="cliente" required />
+
+      <label for="preco">Preço unitário (R$):</label>
+      <input type="number" id="preco" name="preco" step="0.01" min="0" required />
+
+      <label for="quantidade">Quantidade de salgados:</label>
+      <input type="number" id="quantidade" name="quantidade" min="1" required />
+
+      <button type="submit">Calcular Total</button>
+    </form>
+
+    <div id="resultado"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

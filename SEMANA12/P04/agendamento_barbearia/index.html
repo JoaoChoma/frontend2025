@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendamento Barbearia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Agendamento de Atendimento</h1>
+    <form id="formAgendamento">
+      <label for="nome">Nome completo:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="cpf">CPF:</label>
+      <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required />
+
+      <label for="servico">Tipo de corte:</label>
+      <select id="servico" name="servico">
+        <option value="cabelo">Corte de cabelo</option>
+        <option value="completo">Corte + barba</option>
+        <option value="barba">Barba</option>
+      </select>
+
+      <label for="data">Data do atendimento:</label>
+      <input type="date" id="data" name="data" required />
+
+      <fieldset>
+        <legend>Atendimento quinzenal?</legend>
+        <label><input type="radio" name="quinzenal" value="sim" required /> Sim</label>
+        <label><input type="radio" name="quinzenal" value="nao" required /> Não</label>
+      </fieldset>
+
+      <button type="submit">Confirmar Atendimento</button>
+    </form>
+
+    <div id="resumo"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

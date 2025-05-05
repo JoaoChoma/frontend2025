@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulador de Orçamento - Oficina Mecânica</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Simulador de Orçamento</h1>
+    <form id="formOrcamento">
+      <label for="nome">Nome do cliente:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="placa">Placa do veículo:</label>
+      <input type="text" id="placa" name="placa" placeholder="AAA-1234" required />
+
+      <label for="servico">Tipo de serviço:</label>
+      <select id="servico" name="servico">
+        <option value="oleo">Troca de óleo</option>
+        <option value="alinhamento">Alinhamento e balanceamento</option>
+        <option value="revisao">Revisão completa</option>
+      </select>
+
+      <fieldset>
+        <legend>Atendimento prioritário?</legend>
+        <label><input type="radio" name="prioridade" value="sim" required /> Sim</label>
+        <label><input type="radio" name="prioridade" value="nao" required /> Não</label>
+      </fieldset>
+
+      <button type="submit">Calcular Orçamento</button>
+    </form>
+
+    <div id="resultado"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

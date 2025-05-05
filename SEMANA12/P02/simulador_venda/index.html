@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simulador de Venda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Simulador de Venda com Desconto</h1>
+    <div class="form" id="formVenda">
+      <label for="produto">Nome do produto:</label>
+      <input type="text" id="produto" name="produto" required />
+
+      <label for="preco">Preço unitário (R$):</label>
+      <input type="number" id="preco" name="preco" step="0.01" min="0" required />
+
+      <label for="quantidade">Quantidade desejada:</label>
+      <input type="number" id="quantidade" name="quantidade" min="1" required />
+
+      <label for="cupom">Cupom de desconto:</label>
+      <input type="text" id="cupom" name="cupom" />
+
+      <button id="submit">Calcular Total</button>
+    </div>
+
+    <div id="resultado"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
