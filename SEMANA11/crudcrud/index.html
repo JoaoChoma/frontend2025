@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Clientes</title>
+  <style>
+    body { font-family: Arial; max-width: 600px; margin: auto; padding: 20px; }
+    input, button { padding: 8px; margin: 5px 0; width: 100%; }
+    .cliente { border: 1px solid #ccc; padding: 10px; margin: 10px 0; }
+    .cliente span { display: block; }
+  </style>
+</head>
+<body>
+
+  <h2>Cadastro de Clientes</h2>
+
+  <form id="clienteForm">
+    <input type="text" id="nome" placeholder="Nome" required />
+    <input type="email" id="email" placeholder="Email" required />
+    <input type="text" id="telefone" placeholder="Telefone" required />
+    <button type="submit">Salvar Cliente</button>
+  </form>
+
+  <h3>Lista de Clientes</h3>
+  <div id="listaClientes"></div>
+
+  <script>
+    const apiBase = 'https://crudcrud.com/api/639f927d44f34b9aa97445eb0a8dc319/clientes';
+
+    const form = document.getElementById('clienteForm');
+    const lista = document.getElementById('listaClientes');
+
+    let clienteEditandoId = null;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const nome = document.getElementById('nome').value;
+      const email = document.getElementById('email').value;
+      const telefone = document.getElementById('telefone').value;
+
+      const dados = { nome, email, telefone };
+
+      if (clienteEditandoId) {
+        await fetch(`${apiBase}/${clienteEditandoId}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(dados)
+        });
+        clienteEditandoId = null;
+      } else {
+        await fetch(apiBase, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(dados)
+        });
+      }
+
+      form.reset();
+      carregarClientes();
+    });
+
+    async function carregarClientes() {
+      const res = await fetch(apiBase);
+      const clientes = await res.json();
+
+      lista.innerHTML = '';
+      clientes.forEach(cliente => {
+        const div = document.createElement('div');
+        div.className = 'cliente';
+        div.innerHTML = `
+          <span><strong>Nome:</strong> ${cliente.nome}</span>
+          <span><strong>Email:</strong> ${cliente.email}</span>
+          <span><strong>Telefone:</strong> ${cliente.telefone}</span>
+          <button onclick="editarCliente('${cliente._id}', '${cliente.nome}', '${cliente.email}', '${cliente.telefone}')">Editar</button>
+          <button onclick="excluirCliente('${cliente._id}')">Excluir</button>
+        `;
+        lista.appendChild(div);
+      });
+    }
+
+    async function excluirCliente(id) {
+      await fetch(`${apiBase}/${id}`, { method: 'DELETE' });
+      carregarClientes();
+    }
+
+    function editarCliente(id, nome, email, telefone) {
+      document.getElementById('nome').value = nome;
+      document.getElementById('email').value = email;
+      document.getElementById('telefone').value = telefone;
+      clienteEditandoId = id;
+    }
+
+    carregarClientes();
+  </script>
+
+</body>
+</html>
