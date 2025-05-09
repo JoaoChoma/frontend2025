@@ -38,7 +38,7 @@ document.getElementById("cadastroForm").addEventListener("submit", function (e) 
     usuarios.push({ login, senha });
   }
 
-  localStorage.setItem("usuarios", JSON.stringify(usuarios));`
+  localStorage.setItem("usuarios", JSON.stringify(usuarios));
   document.getElementById("cadastroForm").reset();
   carregarUsuarios();
 });
