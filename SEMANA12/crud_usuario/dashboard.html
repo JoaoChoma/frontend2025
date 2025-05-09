@@ -1,0 +1,68 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d1e7dd;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #aaa;
+      width: 400px;
+      text-align: center;
+    }
+    h2 {
+      color: #0f5132;
+    }
+    p {
+      margin-top: 10px;
+      color: #333;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #dc3545;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #c82333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Bem-vindo ao Painel</h2>
+    <p id="boasVindas"></p>
+    <button onclick="logout()">Sair</button>
+  </div>
+
+  <script>
+    const usuario = localStorage.getItem("usuarioLogado");
+    if (!usuario) {
+      window.location.href = "login.html";
+    } else {
+      document.getElementById("boasVindas").textContent = `Olá, ${usuario}!`;
+    }
+
+    function logout() {
+      localStorage.removeItem("usuarioLogado");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>

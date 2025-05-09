@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gerenciar Usuários</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+      padding: 40px;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #aaa;
+      max-width: 500px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      cursor: pointer;
+    }
+    .btnSalvar {
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+    }
+    .btnEditar {
+      background-color: #007bff;
+      color: white;
+      margin-right: 5px;
+    }
+    .btnExcluir {
+      background-color: #dc3545;
+      color: white;
+    }
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Gerenciar Usuários</h2>
+    <form id="cadastroForm">
+      <input type="text" id="login" placeholder="Login" required />
+      <input type="password" id="senha" placeholder="Senha" required />
+      <input type="hidden" id="indexEditando" />
+      <button type="submit" class="btnSalvar">Salvar</button>
+    </form>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Login</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="listaUsuarios"></tbody>
+    </table>
+  </div>
+
+  <script src="js/cadastro.js"></script>
+</body>
+</html>
