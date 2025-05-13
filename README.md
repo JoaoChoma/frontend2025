@@ -6,22 +6,16 @@ joao.choma@unicesumar.edu.br
 
 Turmas ADSIS 3S A, B, C
 
-----
-
-# DIAS DE LUTA DIAS DE PROVAS
-
-- TURMA A DE AMOR	-> 15/04/2025	17/04/2025
-- TURMA B DE BOLA -> 14/04/2025	17/04/2025
-- TURMA C DE CASA	-> 14/04/2025	15/04/2025
-
-lista de escalação está no diretório AVALIACAO 01 - ESCALACAO -> https://github.com/JoaoChoma/frontend2025/tree/main/AVALIACAO%2001%20-%20ESCALACAO
-
 ---
 
+# Link para as atividades do 2 bimestre
+
+[ATIVIDADES 2 BIMESTRE](https://github.com/JoaoChoma/frontend2025/tree/main/ATIVIDADES/2%20BIMESTRE/tetris)
 
 # Link para submissão das entregas das atividades práticas
 
-https://forms.gle/BCnHLFNCvcxGX9Yt5
+[NAO TEMOS UM LINK](https://www.pudim.com.br/)
+
 
 Este formulário será utilizado para a submissão de atividades práticas que irão compor a nota total de ATIVIDADE PRÁTICA que corresponde ao total de 3,0 pontos da disciplina.
 
@@ -34,11 +28,19 @@ Este formulário será utilizado para a submissão de atividades práticas que i
 
     - __Informações Necessárias:__ Preencha os campos com seu nome, RA e a turma na qual está matriculado.
 
-    ## LISTA DE ENTREGAS IDENTIFICADAS
+----
 
-    - As listas estão no diretório ATIVIDADES
+# DIAS DE LUTA DIAS DE PROVAS
 
-    https://github.com/JoaoChoma/frontend2025/tree/main/ATIVIDADES
+- TURMA A DE AMOR
+- TURMA B DE BOLA
+- TURMA C DE CASA
 
+lista de escalação está no diretório AVALIACAO 01 - ESCALACAO -> https://github.com/JoaoChoma/frontend2025/tree/main/AVALIACAO%2001%20-%20ESCALACAO
+
+---
+
+    
+    ## LINKS LEGAIS
 
     https://github.com/braziljs/eloquente-javascript
