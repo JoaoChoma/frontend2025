@@ -10,7 +10,7 @@ Turmas ADSIS 3S A, B, C
 
 # Link para as atividades do 2 bimestre
 
-[ATIVIDADES 2 BIMESTRE](https://github.com/JoaoChoma/frontend2025/tree/main/ATIVIDADES/2%20BIMESTRE/tetris)
+[ATIVIDADES 2 BIMESTRE](https://github.com/JoaoChoma/frontend2025/tree/main/ATIVIDADES/2%20BIMESTRE)
 
 # Link para submissão das entregas das atividades práticas
 
