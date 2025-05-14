@@ -2,7 +2,7 @@
 
 Vocês terão acesso ao código-fonte do jogo Tetris na pasta [tetris](https://github.com/JoaoChoma/frontend2025/blob/main/ATIVIDADES/2%20BIMESTRE/tetris/index.html). A versão atual do jogo apresenta apenas uma velocidade fixa, um único formato de peça e um sistema básico de pontuação.
 
-    Objetivos e Atribuições:
+    TAREFAS - ENTREGA 19/05:
 
 - Incluir novos formatos de peças, ampliando a variedade e a complexidade do jogo.
 
