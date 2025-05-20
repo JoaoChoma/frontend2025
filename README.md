@@ -14,7 +14,19 @@ Turmas ADSIS 3S A, B, C
 
 # Link para submissão das entregas das atividades práticas
 
-[NAO TEMOS UM LINK](https://www.pudim.com.br/)
+Com o objetivo de aprimorar continuamente nossos processos nessa indústria vital, estou testando um novo formato de entregas.
+
+No link a seguir, você será direcionado a um ambiente do Google Classroom, onde poderá se inscrever para a turma. Nesse espaço, será possível:
+- Submeter o link do seu repositório no GitHub;
+- Acompanhar o status das suas entregas;
+- Manter um registro organizado das atividades realizadas.
+
+
+- [TURMA A DE AMOR](https://classroom.google.com/c/Njk5NTU5OTA3MjU2?cjc=w4kx5nd2)
+
+- [TURMA B DE BOLA](https://classroom.google.com/c/Njk5NTYwNDM1MjQz?cjc=u22fxe3d)
+
+- [TURMA C DE CASA](https://classroom.google.com/c/Njk5NTYwMzc5Njgx?cjc=jfpkwxdk)
 
 
 Este formulário será utilizado para a submissão de atividades práticas que irão compor a nota total de ATIVIDADE PRÁTICA que corresponde ao total de 3,0 pontos da disciplina.
