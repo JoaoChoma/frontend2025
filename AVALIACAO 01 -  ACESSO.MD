@@ -1,3 +1,0 @@
-LINK PARA ACESSO A AVALIAÇÃO
-
-https://forms.gle/7Z3xWSY9CbRUE8uX9
